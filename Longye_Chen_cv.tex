@@ -143,8 +143,18 @@
       {Stagiaire Systèmes, Réseaux et Infrastructure}{Juin 2026 -- Sept. 2026}
       {Lessonia}{Bretagne, France}
       \resumeItemListStart
-        \resumeItem{\textbf{Arrêt automatique sur coupure électrique} : benchmark de 3 solutions (Eaton IPP, NUT, Eaton Brightlayer), intégration du cluster Proxmox VE et du SAN DataCore à la supervision et règles d'arrêt ordonné selon les dépendances. \textit{Résultat : sécurité critique perdue lors de la migration VMware vers Proxmox rétablie, infrastructure protégée contre la perte de données et alertes en temps réel}}
-        \resumeItem{\textbf{Agent IA auto-hébergé} (Ollama, Open WebUI) : webhooks Proxmox VE et GLPI, outil Python en lecture seule vers la base PostgreSQL métier. \textit{Résultat : synthèses d'incidents générées automatiquement chaque jour et données de l'entreprise interrogeables en langage naturel, en toute sécurité}}
+        \resumeItem{\textbf{Sécurisation de l'infrastructure : arrêt automatique sur coupure}}
+        \begin{itemize}
+          \resumeItem{Comparé 3 solutions (Eaton IPP, NUT, Eaton Brightlayer) sur la compatibilité Proxmox, le coût et la simplicité de mise en œuvre.}
+          \resumeItem{Intégré à la supervision le cluster Proxmox VE (7 hôtes, 117 VM) et 2 SAN DataCore (un par infrastructure), avec des règles d'arrêt ordonné selon les dépendances entre services.}
+          \resumeItem{Rétabli la protection contre les coupures, perdue lors de la migration VMware $\rightarrow$ Proxmox car l'ancien dispositif dépendait de VMware : arrêt complet en 15 min maximum et alertes en temps réel, validés par des tests de coupure simulés.}
+        \end{itemize}
+        \resumeItem{\textbf{Déploiement d'un agent IA auto-hébergé avec Ollama et Open WebUI}}
+        \begin{itemize}
+          \resumeItem{Connecté Proxmox VE et GLPI à l'agent par webhooks pour générer chaque jour une synthèse des 5 à 10 tickets traités, avec $\sim$90\,\% de temps de rédaction manuelle économisé.}
+          \resumeItem{Développé en Python un outil d'interrogation en langage naturel des bases PostgreSQL et MSSQL de l'entreprise, hébergé à 100\,\% en local et en lecture seule (modification des données impossible).}
+          \resumeItem{Déployé et utilisé 2 modèles de langage (Qwen et Gemma) via Ollama.}
+        \end{itemize}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
