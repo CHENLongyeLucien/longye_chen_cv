@@ -40,6 +40,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\renewcommand\labelitemiii{\textbf{--}}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -165,13 +166,14 @@
 \section{Projets}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/CHENLongyeLucien/Feikuai}{\underline{Feikuai}}} -- Hackathon ESSEC $\times$ Kryptosphere, Secure Horizons (36 h)}{Oct. 2026}
+          {\textbf{\href{https://github.com/CHENLongyeLucien/Feikuai}{\underline{Feikuai}}} -- Hackathon ESSEC $\times$ Kryptosphere, Secure Horizons}{Oct. 2026}
           \resumeItemListStart
-            \resumeItem{\emph{Technologies : TypeScript, React, Solidity, Python, Avalanche, Docker}}
+            \item[] \small\emph{TypeScript, React, Solidity, Python, Avalanche, Docker}
             \resumeItem{\textbf{Pipeline multi-agents IA} conçu en équipe de 3 pour protéger les paiements fournisseurs en stablecoins contre le phishing, la falsification de factures et l'injection de prompt, dans une approche alignée sur DORA : l'IA lit, des règles décident, un humain signe (EIP-712), un smart contract Avalanche applique.}
-            \resumeItem{Développé l'API, les outils MCP des agents et le portefeuille (connexion du wallet, signature EIP-712 des paiements, gestion des clés côté serveur), et contribué au front-end React.}
+            \resumeItem{\textbf{Développé l'API, les outils MCP des agents et le portefeuille} (connexion du wallet, signature EIP-712 des paiements, gestion des clés côté serveur), et contribué au front-end React.}
             \resumeItem{\textbf{Testé sur 1\,821 attaques} : 97\,\% bloquées en amont, contre 0\,\% pour un agent classique détenant un portefeuille ; 0 paiement vers l'attaquant sur 1\,896 tentatives rejouées on-chain, même en supposant agents et serveur compromis ; 143 tests (104 unitaires, 30 smart contract, 9 de bout en bout).}
-          \resumeItemListEnd
+        \resumeItemListEnd
+
       \resumeProjectHeading
           {\textbf{\href{https://github.com/MeohamedYassineAgourram/Odyssey}{\underline{Odyssey}}} -- Hackathon \{Tech: Europe\} AI Gaming Hack Paris}{Sept. 2026}
           \resumeItemListStart
