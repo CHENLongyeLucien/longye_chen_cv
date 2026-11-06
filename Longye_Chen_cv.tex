@@ -150,13 +150,13 @@
         \resumeItem{\textbf{Sécurisation de l'infrastructure : arrêt automatique sur coupure}}
         \begin{itemize}[leftmargin=0.2in, label={--}, topsep=0pt, itemsep=0pt, parsep=0pt]
           \resumeItem{Comparé 3 solutions (Eaton IPP, NUT, Eaton Brightlayer) sur la compatibilité Proxmox, le coût et la simplicité de mise en œuvre.}
-          \resumeItem{Intégré à la supervision le cluster Proxmox VE (7 hôtes, 117 VM) et 2 SAN DataCore (un par infrastructure), avec des règles d'arrêt ordonné selon les dépendances entre services.}
+          \resumeItem{Intégré à la supervision le cluster Proxmox VE (7 hôtes, 117 VM) et 2 SAN DataCore, avec des règles d'arrêt ordonné selon les dépendances entre services.}
           \resumeItem{Rétabli la protection contre les coupures, perdue lors de la migration VMware $\rightarrow$ Proxmox car l'ancien dispositif dépendait de VMware : arrêt complet en 15 min maximum et alertes en temps réel, validés par des tests de coupure simulés.}
         \end{itemize}
         \resumeItem{\textbf{Déploiement d'un agent IA auto-hébergé avec Ollama et Open WebUI}}
         \begin{itemize}[leftmargin=0.2in, label={--}, topsep=0pt, itemsep=0pt, parsep=0pt]
           \resumeItem{Connecté Proxmox VE et GLPI à l'agent par webhooks pour générer chaque jour une synthèse des 5 à 10 tickets traités, avec $\sim$90\,\% de temps de rédaction manuelle économisé.}
-          \resumeItem{Développé en Python un outil d'interrogation en langage naturel des bases PostgreSQL et MSSQL de l'entreprise, hébergé à 100\,\% en local et en lecture seule (modification des données impossible).}
+          \resumeItem{Développé en Python un outil d'interrogation en langage naturel des bases PostgreSQL et MSSQL de l'entreprise, hébergé à 100\,\% en local et en lecture seule.}
           \resumeItem{Déployé et utilisé 2 modèles de langage (Qwen et Gemma) via Ollama.}
         \end{itemize}
       \end{itemize}
@@ -172,8 +172,8 @@
           \resumeItemListStart
             \item[] \small\emph{TypeScript, React, Solidity, Python, Avalanche, Docker}
             \resumeItem{\textbf{Pipeline multi-agents IA} conçu en équipe de 3 pour protéger les paiements fournisseurs en stablecoins contre le phishing, la falsification de factures et l'injection de prompt, dans une approche alignée sur DORA : l'IA lit, des règles décident, un humain signe (EIP-712), un smart contract Avalanche applique.}
-            \resumeItem{\textbf{Développé l'API, les outils MCP des agents et le portefeuille} (connexion du wallet, signature EIP-712 des paiements, gestion des clés côté serveur), et contribué au front-end React.}
-            \resumeItem{\textbf{Testé sur 1\,821 attaques} : 97\,\% bloquées en amont, contre 0\,\% pour un agent classique détenant un portefeuille ; 0 paiement vers l'attaquant sur 1\,896 tentatives rejouées on-chain, même en supposant agents et serveur compromis ; 143 tests (104 unitaires, 30 smart contract, 9 de bout en bout).}
+            \resumeItem{\textbf{Développé l'API, les outils MCP des agents et le portefeuille} : connexion du wallet, signature EIP-712 des paiements, gestion des clés côté serveur, et contribué au front-end React.}
+            \resumeItem{\textbf{Testé sur 1\,821 attaques} : 97\,\% bloquées en amont, contre 0\,\% pour un agent classique détenant un portefeuille ; 0 paiement vers l'attaquant sur 1\,896 tentatives rejouées on-chain, même en supposant agents et serveur compromis ; 143 tests.}
         \resumeItemListEnd
 
       \resumeProjectHeading
