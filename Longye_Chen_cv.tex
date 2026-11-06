@@ -143,22 +143,23 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Stagiaire Systèmes, Réseaux et Infrastructure -- Lessonia}{Juin 2026 -- Sept. 2026}
-      {}{Bretagne, France}
-      \resumeItemListStart
+      {Stagiaire Systèmes, Réseaux et Infrastructure}{Juin 2026 -- Sept. 2026}
+      {Lessonia}{Bretagne, France}
+
+      \begin{itemize}[leftmargin=0.15in, label={$\vcenter{\hbox{\tiny$\bullet$}}$}, topsep=0pt, itemsep=0pt, parsep=0pt]
         \resumeItem{\textbf{Sécurisation de l'infrastructure : arrêt automatique sur coupure}}
-        \begin{itemize}
+        \begin{itemize}[leftmargin=0.2in, label={--}, topsep=0pt, itemsep=0pt, parsep=0pt]
           \resumeItem{Comparé 3 solutions (Eaton IPP, NUT, Eaton Brightlayer) sur la compatibilité Proxmox, le coût et la simplicité de mise en œuvre.}
           \resumeItem{Intégré à la supervision le cluster Proxmox VE (7 hôtes, 117 VM) et 2 SAN DataCore (un par infrastructure), avec des règles d'arrêt ordonné selon les dépendances entre services.}
           \resumeItem{Rétabli la protection contre les coupures, perdue lors de la migration VMware $\rightarrow$ Proxmox car l'ancien dispositif dépendait de VMware : arrêt complet en 15 min maximum et alertes en temps réel, validés par des tests de coupure simulés.}
         \end{itemize}
         \resumeItem{\textbf{Déploiement d'un agent IA auto-hébergé avec Ollama et Open WebUI}}
-        \begin{itemize}
+        \begin{itemize}[leftmargin=0.2in, label={--}, topsep=0pt, itemsep=0pt, parsep=0pt]
           \resumeItem{Connecté Proxmox VE et GLPI à l'agent par webhooks pour générer chaque jour une synthèse des 5 à 10 tickets traités, avec $\sim$90\,\% de temps de rédaction manuelle économisé.}
           \resumeItem{Développé en Python un outil d'interrogation en langage naturel des bases PostgreSQL et MSSQL de l'entreprise, hébergé à 100\,\% en local et en lecture seule (modification des données impossible).}
           \resumeItem{Déployé et utilisé 2 modèles de langage (Qwen et Gemma) via Ollama.}
         \end{itemize}
-      \resumeItemListEnd
+      \end{itemize}
 
   \resumeSubHeadingListEnd
 
@@ -179,16 +180,9 @@
           {\textbf{\href{https://github.com/MeohamedYassineAgourram/Odyssey}{\underline{Odyssey}}} -- Hackathon \{Tech: Europe\} AI Gaming Hack Paris}{Sept. 2026}
           \resumeItemListStart
             \item[] \small\emph{Three.js, React, Google Gemini, Gradium, Lyria, Vercel}
-            \resumeItem{\textbf{Jeu 3D jouable dans le navigateur} conçu en équipe de [N] : construction de ville, combats, boss final et partie complète d'environ 2 minutes, compatible clavier et manette Xbox.}
+            \resumeItem{\textbf{Jeu 3D jouable dans le navigateur} conçu en équipe de 3 : construction de ville, combats, boss final et partie complète d'environ 2 minutes, compatible clavier et manette Xbox.}
             \resumeItem{\textbf{Intégration de l'IA générative} : compagnons pilotables à la voix ou au texte via Gemini, dont les ordres en langage naturel sont traduits en actions validées par les règles du jeu, avec voix Gradium, musique Lyria et visuels générés par IA.}
-            \resumeItem{\textbf{Livré un prototype complet}, \href{https://troy-120.vercel.app}{\underline{déployé en ligne}} sur Vercel en [durée] de hackathon.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{\href{https://github.com/CHENLongyeLucien/cinema-finder-poc}{\underline{Cinema Finder}}} -- Simulation Datacom $|$ \emph{React, Leaflet, MapLibre, Material UI}}{Sept. 2026}
-          \resumeItemListStart
-            \resumeItem{\textbf{Immersion dans une équipe de développement} : simulation de la méthode de travail des équipes Datacom (lecture de la documentation, revue de code, soumission pour relecture). \textit{Résultat : prise en main rapide d'une base de code inconnue et des pratiques professionnelles de revue}}
-            \resumeItem{\textbf{Audit d'une application web} de cartographie de cinémas (Australie, Nouvelle-Zélande) et planification d'améliorations. \textit{Résultat : axes d'amélioration identifiés et documentés pour la suite du projet}}
-            \resumeItem{\textbf{Débogage} avec les outils de développement du navigateur : identification de la cause racine de 4 bugs (coordonnées inversées sur MapLibre, distance de 0 km masquée, durée des notifications ignorée, cache mémoire non borné) et correctifs ciblés. \textit{Résultat : navigation sur la carte fiabilisée, affichage corrigé et fuite mémoire évitée}}
+            \resumeItem{\textbf{Livré un prototype complet}, \href{https://troy-120.vercel.app}{\underline{déployé en ligne}} sur Vercel.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -201,7 +195,7 @@
      \textbf{Frameworks et bibliothèques :} React, Node.js, Three.js, FastAPI, Flask \\
      \textbf{Bases de données :} PostgreSQL, MSSQL \\
      \textbf{Outils et infrastructure :} Git, GitHub, Docker, Proxmox VE, GLPI, Ollama \\
-     \textbf{Certifications :} \href{https://www.credly.com/badges/942aa2ea-c60e-4343-9da9-fcaad618f717/public_url}{\underline{IBM SkillsBuild (Artificial Intelligence Fundamentals)}}, \href{https://www.credly.com/badges/f42f2621-21d8-478a-9dae-b04f33677714/public_url}{\underline{Web Development Fundamentals}} \\
+     \textbf{Certificats : IBM SkillsBuild -- } \href{https://www.credly.com/badges/942aa2ea-c60e-4343-9da9-fcaad618f717/public_url}{\underline{Artificial Intelligence Fundamentals}}, \href{https://www.credly.com/badges/f42f2621-21d8-478a-9dae-b04f33677714/public_url}{\underline{Web Development Fundamentals}} \\
      \textbf{Langues :} Français (langue maternelle), Anglais (C1), Chinois (B2)
     }}
  \end{itemize}
